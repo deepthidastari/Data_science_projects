@@ -1,5 +1,43 @@
-Project Goal
-Data Understanding
-Modeling Approach
-Insights
-Recommendations
+Project Goal : 
+Determine how smokefree indoors legislation, tobacco tax legislation, and tobacco health policy funding from 1996 to 2013 have 
+impacted tobacco usage rates by State in the United States. 
+
+Data Understanding :
+We collected our data from the CDC public website.We aggregated 5 different datasets(Smokefree Indoors Restrictions, Smokefree Indoors Penalties
+,Funding Per Capita,Cigarette Tax/ pack, Little Cigar Tax/ pack) by state and year. 
+
+We analysed the percentage of smokers of different age groups across different years ie; from 1996 to 2013. The survey question was-- 
+"do you smoke now?"-- and the answers were yes or no. As you can expect ppl from the age group 25 to 44 have the highest percentage of 
+smoking followed by ppl in the age group of 18 to 24 years. And less of the people in the age group 65 years and older currently smoke
+
+
+Modeling Approach :
+
+1)Correlation Analysis: The comparison of cigarette taxes and little cigar taxes, the strongest correlation within the data, shows that 
+many states do not tax little cigars at all, some states tax little cigars and cigarettes identically, and some states tax little cigars
+at a lower rate than cigarettes. The second strongest correlation is between cigarette taxes and percent smokers with a correlation 
+between -0.5 and -0.4 depending on the age group. There is low correlation between cigarette taxes and tobacco-related funding per capita
+and between little cigar taxes and percent smokers. There is even less correlation between funding per capita and percent smokers, 
+and almost no correlation between little cigar tax and funding per capita.   Therefore, for the dataset based on age, age and cigarette tax 
+are likely the best modeling variables.
+The correlation statistic for each of the variables against percent smokers is less than 0.3. Like the age data, the top two correlations are 
+between cigarette tax and funding per capita and cigarette tax and percent smokers, respectively.
+
+
+2)Logistic Regression - Base Model
+3)Clustered Logistic Regression : 
+  a) K-Means(K=5 and K= 15)
+  
+4)PCA & Logistic Regression - Model with the highest accuracy
+
+Insights :
+1) Higher cigarette taxes decrease the odds that an individual will smoke
+2) Smokefree legislation restricting smoking in restaurants, bars, and hotels reduces the odds of an individual choosing to smoke
+3) Policy funding has no significant impact on smoking rates.
+
+Recommendations :
+1)States should maintain high taxes on cigarettes to reduce smoking rates
+2)States should continue to explore smokefree indoors policies
+3)States should carefully analyze the success of funding for tobacco programs
+
+
