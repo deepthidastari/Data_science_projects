@@ -4,4 +4,5 @@ the registeration process, the company Zyco Co. wants you to identify candidates
 
 a. Create a model predicting if a candidate will attend the conference. This will be indicated by the "Observed Attendance" column in 
      the data set. Create the model only using the records where this column is not null
+     
 b. Provide a probability and a prediction for the candidates where the "Observed Attendance" column is null.
