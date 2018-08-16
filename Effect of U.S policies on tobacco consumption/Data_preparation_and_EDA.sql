@@ -21,7 +21,6 @@ select distinct MeasureDesc from behavior_risk_factor;
 select avg(Data_Value), Age, Year, LocationAbbr from behavior_risk_factor 
 where Age NOT IN ('Age 20 and Older', 'Age 25 and Older','All Ages' , '18 to 44 Years') GROUP by Age ;
 
-
 #Number of Current Cigarette smokers by year, by state
 
 select avg(Data_Value), Year, LocationAbbr, MeasureDesc from behavior_risk_factor
@@ -38,7 +37,7 @@ Age = 'All Ages' and Education = 'All Grades'
 GROUP BY Response , Year, LocationAbbr, MeasureDesc 
 Order by LocationAbbr, Year DESC;
 
-# Create Dummy Variables for Every Day somking and Some Days Smoking
+#Create Dummy Variables for Every Day somking and Some Days Smoking
 
 Select * , if (Response = 'Every Day',1,0) as EveryDay, if(Response = 'Some Days',1,0) as SomeDays from 
 (select avg(Data_Value), Year, LocationAbbr, MeasureDesc , Response from 
@@ -64,6 +63,7 @@ Select Year, LocationAbbr, Max(EveryDay), Max(SomeDays) from
       GROUP BY Year, LocationAbbr 
       
 	  Order by LocationAbbr, Year DESC;
+	  
  # creating a new table to stor SmokingFrequency results     
  Create table SmokingFrequency(
   Year int,
@@ -159,7 +159,7 @@ Insert into NumberOfCigarattesSmoked
 
 select * from NumberOfCigarattesSmoked;
 
-DESCribe NumberOfCigarattesSmoked;
+Describe NumberOfCigarattesSmoked;
 
 Describe health_policy_funding;
 
@@ -171,9 +171,6 @@ where MeasureDesc = 'Daily Cigarette Consumption Among Every Day Smokers - Frequ
 			
             group by year, LocationAbbr
             order by year, LocationAbbr ASC;
-
-
-
 
 Select Year, LocationAbbr, Max(LessThan15), Max(Between15And25), Max(GreaterThan25) from
 	(
