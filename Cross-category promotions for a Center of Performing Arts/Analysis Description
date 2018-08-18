@@ -1,0 +1,24 @@
+Goal of the project : Build a model to find association rules between different categories of shows offered by the Center of Peforming Arts
+
+Model details:
+
+Model type : Carma Association Model
+Inputs: Binary (T/F) flags for each category indicating whether a customer had purchased an item in the category.
+Details : Model uses partitioned data for validation and requires a minimum of 20% support and confidence for each rule
+Output : Generated 50 association rules. 
+
+Insights: 
+
+1) Broadway tickets and subscriptions are strongly associated. Other rules involving Broadway, Performing Arts, and 
+Subscriptions have strong support with medium confidence. 
+
+2) Since subscriptions make up the fast majority of purchases, rules involving subscriptions tended to overshadow rules independent of 
+subscriptions. In order to understand the interactions of the various types of shows, we eliminated all rules involving subscriptions. 
+Broadway and Performing Arts rules perform relatively well. However, the rules containing the Live shows performed poorly on either support
+or confidence. 
+
+Recommendations:
+
+1) Continue exploring cross-category promotions for Broadway and Performing Arts series.
+2) Offering subscriptions for Live shows may be beneficial
+3) Adding dollar amounts for each show would allow us to determine what ticket packages are most profitable.
