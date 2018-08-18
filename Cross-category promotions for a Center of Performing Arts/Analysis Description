@@ -1,6 +1,7 @@
 
 Goal of the project : 
-Build a model to find association rules between different categories of shows offered by the Center of Peforming Arts
+Build a model to find association rules between different categories of shows offered by the Center of Peforming Arts 
+in order to come up with cross-category promotions.
 
 Model details:
 
