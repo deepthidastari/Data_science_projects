@@ -1,8 +1,9 @@
-Goal of the project : Build a model to find association rules between different categories of shows offered by the Center of Peforming Arts
+Goal of the project : 
+Build a model to find association rules between different categories of shows offered by the Center of Peforming Arts
 
 Model details:
 
-Model type : Carma Association Model
+Model type : Built a Carma Association Model using IBM SPSS
 Inputs: Binary (T/F) flags for each category indicating whether a customer had purchased an item in the category.
 Details : Model uses partitioned data for validation and requires a minimum of 20% support and confidence for each rule
 Output : Generated 50 association rules. 
