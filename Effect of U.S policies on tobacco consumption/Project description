@@ -14,7 +14,6 @@ We analysed the percentage of smokers of different age groups across different y
 "do you smoke now?"-- and the answers were yes or no. As you can expect ppl from the age group 25 to 44 have the highest percentage of 
 smoking followed by ppl in the age group of 18 to 24 years. And less of the people in the age group 65 years and older currently smoke
 
-
 Modeling Aproach:
 
 Base Model : Logistic regression with all 4 inputs
@@ -32,7 +31,6 @@ Input: cluster # and all other previous logistic regression inputs
 Target: Percentage smokers
 For K = 5 clustered logistic regression, R-squared : 0.7409
 For K = 15 clustered logistic regression, R-squared : 0.7527
-
 
 Insights :
 1) Higher cigarette taxes decrease the odds that an individual will smoke
